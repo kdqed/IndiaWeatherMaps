@@ -33,7 +33,7 @@ image.save(outfile_name)
 
 bot = telegram.Bot(token=config.BOT_TOKEN)
 with open(outfile_name,"rb") as f:
-  bot.send_photo(chat_id="@IndiaWeatherMaps", photo=f)
+  bot.send_photo(chat_id="@IndiaWeatherMaps", photo=f, timeout=200)
   f.close()
   
     
